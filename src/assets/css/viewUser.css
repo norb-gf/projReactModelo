@@ -1,0 +1,91 @@
+.view-container {
+  display: grid;
+  grid-template-columns: 5rem 20rem;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "i1 i1"
+    "i2 i3"
+    "i4 i5"
+    "i6 i7"
+    "i8 i9"
+    "i10 i11"
+    "i12 i13"
+    "i14 i14";
+  justify-content: center;
+  align-content: center;
+  /* background-color:rgb(201, 201, 201);  */
+  grid-gap: 1.7rem;
+  padding: 2em;
+}
+.view-it1 {
+  grid-area: i1;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  /* color: white;
+  text-shadow: 2px 2px 4px #2f00ff; */
+}
+.view-it2 {
+  grid-area: i2;
+}
+.view-it3 {
+  grid-area: i3;
+}
+.view-it4 {
+  grid-area: i4;
+}
+.view-it5 {
+  grid-area: i5;
+}
+.view-it6 {
+  grid-area: i6;
+}
+.view-it7 {
+  grid-area: i7;
+}
+.view-it8 {
+  grid-area: i8;
+}
+.view-it9 {
+  grid-area: i9;
+}
+.view-it10 {
+  grid-area: i10;
+}
+.view-it11 {
+  grid-area: i11;
+}
+.view-it12 {
+  grid-area: i12;
+}
+.view-it13 {
+  grid-area: i13;
+}
+.view-it14 {
+  grid-area: i14;
+  border-radius: 8px;
+  text-align: center;
+}
+#btn-view-voltar {
+  background-color: orange; 
+  color: white;
+  font-size: 1.0rem;
+  font-weight: 700;
+  height: auto;  
+  line-height: 1.5rem;
+  min-width: 8rem;
+}
+
+.view-it3,
+.view-it5,
+.view-it7,
+.view-it9,
+.view-it11,
+.view-it13 {
+  border: 1px solid rgba(160, 160, 160, 0.61);
+  padding-left: 1rem;
+  color: rgb(53, 67, 255);
+}
+.view-c,
+.view-d {
+  font-weight: 700;
+}

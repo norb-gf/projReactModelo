@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #0c0d0e;
+  --light-blue-color: #08daff;
+  --white-color: #ffffff;
+  --light-gray-color: #eeeeeeb7;
+  --blue-color: #23246e71;
+  --red-color: #ff0000;
+  --gap: 3rem;
+}
+
+html, body{height: 100%}
+
+
+.container-header {
+  width: 100%;
+  position: relative;
+  margin-bottom: 1rem;
+  /* z-index: 1; */
+}
+#app-home {
+  position: relative;
+  padding: 0.3rem 2rem;
+  font-weight: 400;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+#app-home:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.container {
+  min-height:100%;
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  /* background-color: rgba(224, 224, 224, 0.959); */
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns: 50rem auto auto;
+  grid-template-areas:
+    "wh wh wh"
+    "wlbl wlbl wlbl"
+    "wi wbtnsearch wbtnclear"
+    "wbtnadd wbtnadd wbtnadd";
+  /* justify-content: space-between; */
+  justify-content: left;
+}
+
+.wh1 {
+  grid-area: wh;
+  margin-top: 1rem;
+}
+.lbl-pesq {
+  grid-area: wlbl;
+  font-weight: 500;
+}
+.input-pesq {
+  grid-area: wi;
+  width: 100%;
+  padding-left: 1rem;
+  font-size: 1.3rem;
+}
+.btn-search {
+  grid-area: wbtnsearch;
+  margin-left: 1rem;
+  min-width: 5rem;
+}
+.btn-clear {
+  grid-area: wbtnclear;
+  margin-left: 1rem;
+  min-width: 5rem;
+}
+.btn-add {
+  grid-area: wbtnadd;
+  width: 20rem;
+  margin: 1rem 0 0.5rem 0;
+}
+.footer {
+  margin-top: 2rem;
+  background-color: rgb(33, 95, 119);
+  color: white;
+  /* position: bottom; */
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  text-align: left;
+  padding-left: 50px;
+}
+
+.card-tit {
+  padding: 20px;
+}
+
+.info {
+  color: blue;
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0px 0px 0px 50px;
+  padding: 1px 5px 10px 0px;
+}
+.info-del {
+  color: rgb(255, 115, 0);
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0px 10px 0px 50px;
+  padding: 1px 5px 10px 0px;
+}
+ 
+
+.table {
+  padding: 0;
+  margin: 0;
+}
+#tr {
+  font-size: 15px;
+  line-height: 0.2rem;
+  text-align: left;
+  vertical-align: middle;
+  padding: 0;
+}
+#btn-save-create,
+#btn-cancel-create {
+  margin: 1rem 1rem 0 1rem;
+  min-width: 5rem;
+}
+
+#btn-save-delete,
+#btn-cancel-delete {
+  margin: 0 0 1rem 3rem;
+  min-width: 5rem;
+}
+
+#btn-table-list-update,
+#btn-table-list-delete,
+#btn-table-list-ler {
+  margin: 0 0.4rem 0 0.4rem;
+  font-size: 0.9rem;
+  padding: 0 0.5rem 0 0.5rem;
+  width: 4.5rem;
+}
+.form-del {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem 0 1rem;
+  align-items: left;
+  /* justify-items: baseline; */
+}
+.form-del input {
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+  border: none;
+}
+#lbl-del-sobrenome {
+  margin-left: 0.7rem;
+}
+.h3-text-center {
+  margin: 1rem 0 2rem 0;
+  color: red;
+}
